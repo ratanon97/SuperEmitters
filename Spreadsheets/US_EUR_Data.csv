@@ -1,0 +1,36 @@
+Ref,Region,Source,Notes,Value,Unit,LN(EUR)
+O'Donoughue 2014,US,Various,"Conventional, low",8.493810423,mil m3,2.139337713
+Stephenson 2011,US,US geological survey,"Low estimate, vertically drilled wells",8.493810423,mil m3,2.139337713
+Heath 2013,US,EPA and others,10%ile lower bound of production records. This is data for all active plays in US,11.32508056,mil m3,2.427019785
+Dale 2013,US,Weber 2012,Low estimate,14,mil m3,2.63905733
+Weber 2012,US,"Skone 2011, Stephenson","Shale, low",14.15635071,mil m3,2.650163336
+Jiang 2011,US,Unknown,"Low estimate, based on 0.3 MMscf/day for 5 years",15.50120402,mil m3,2.7409177
+Dale 2013,US,Jiang ,Low estimate,15.57198578,mil m3,2.745473516
+Stephenson 2011,US,US geological survey,"Low estimate, horizontally drilled wells",25.48143127,mil m3,3.237950001
+Burnham 2012,US,Unknown,Conventional wells,28.31270141,mil m3,3.343310517
+O'Donoughue 2014,US,Various,"Conventional, best estimate",28.31270141,mil m3,3.343310517
+Stephenson 2011,US,None,"both conv and unconv, Low",28.31270141,mil m3,3.343310517
+Skone 2011,US,Unknown,Tight gas,33.97524169,mil m3,3.525632074
+Shahriar,US,Skone 2011,Tight gas,34,mil m3,3.526360525
+Heath 2014,US,US EIA,Shale,40.204036,mil m3,3.693967389
+Santoro 2011,Marcellus,"Various, plus assumptions",,43.88468719,mil m3,3.781565448
+Burnham 2011,US,EPA,"Base case estimate, shale",45,mil m3,3.80666249
+O'Donoughue 2014,US,Various,"Conventional, high",56.62540282,mil m3,4.036457698
+Stephenson 2011,US,None,"both conv and unconv, Medium",56.62540282,mil m3,4.036457698
+Weber 2012,US,"Skone 2011, Stephenson","Shale, medium",56.62540282,mil m3,4.036457698
+Dale 2013,US,Weber 2012,Central estimate,57,mil m3,4.043051268
+Heath 2013,US,EPA and others,50%ile ,62.2879431,mil m3,4.131767877
+Stephenson 2011,US,US geological survey,"High estimate, horizontally drilled wells",73.61302367,mil m3,4.298821962
+Jiang 2011,US,Unknown,Shale,76.44429381,mil m3,4.33656229
+Dale 2013,US,Jiang ,Base case estimate,77.57680186,mil m3,4.351268437
+Skone 2011,Barnett ,Unknown,Shale,84.93810423,mil m3,4.441922806
+Stephenson 2011,US,US geological survey,"High estimate, vertically drilled wells",84.93810423,mil m3,4.441922806
+Stephenson 2011,US,None,"both conv and unconv, High",84.93810423,mil m3,4.441922806
+Dale 2013,US,Howarth 2011,,85,mil m3,4.442651256
+Shahriar,US,Skone 2011,Shale,85,mil m3,4.442651256
+Weber 2012,US,"Skone 2011, Stephenson","Shale, high",99.09445494,mil m3,4.596073486
+Burnham 2011,US,EPA,"High estimate, shale",150,mil m3,5.010635294
+Dale 2013,US,Weber 2012,High estimate,150,mil m3,5.010635294
+Heath 2013,US,EPA and others,90%ile,198.1889099,mil m3,5.289220666
+Dale 2013,US,Jiang ,High est,2576.455828,mil m3,7.854170024
+Jiang 2011,US,Unknown,"High estimate, based on 10 MMscf/day for 25 years",2583.534004,mil m3,7.85691351

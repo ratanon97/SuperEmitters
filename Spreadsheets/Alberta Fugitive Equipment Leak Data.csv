@@ -1,0 +1,196 @@
+Site ID,AER Field Centre,PETRINEX FACILITY SUBTYPE,Well Status,EMISSION TYPE,MAJOR EQUIPMENT,COMPONENT SERVICE TYPE,COMPONENT TYPE,MEASUREMENT DEVICE,Leak TAG,THC Leak Rate (sm3/hr)
+Battery Gas 10,Grande Prairie,Gas Multiwell effluent,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,1,0.034182554
+Battery Gas 10,Grande Prairie,Gas Multiwell effluent,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201459,0.189794182
+Battery Gas 10,Grande Prairie,Gas Multiwell effluent,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Calibrated bag,201458,0.576968684
+Battery Gas 10,Grande Prairie,Gas Multiwell effluent,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201460,0.621144596
+Battery Gas 14,Midnapore,Gas Multiwell Group,,Leak,Separator,Process Gas,Regulator,Highflow,204029,0.143041061
+Battery Gas 22,Red Deer,Gas Multiwell Group,,Leak,Separator,Process Gas,Valve,Estimate,201925,0.170065502
+Battery Gas 24,Grande Prairie,Gas Multiwell Group,,Leak,Separator,Process Gas,Pump Seal,Highflow,200851,0.032269687
+Battery Gas 25,Red Deer,Gas Multiwell Group,,Leak,Separator,Process Gas,Pump Seal,Highflow,201921,0.086353218
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Separator,Process Gas,Connector,Highflow,200827,0.01718425
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Separator,Process Gas,Connector,Highflow,200828,0.01718425
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,200829,0.085921248
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Process Gas,Valve,Highflow,200830,0.687369985
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,200831,0.034368499
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Dehydrator - Glycol,Process Gas,Connector,Highflow,200832,0.085921248
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Vent,Production Tank (fixed roof),Light Liquid,Open-Ended Line,Estimate,200833,0.233691109
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,200834,0.051552749
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,8934,0.01718425
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,200837,0.085921248
+Battery Gas 35,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Reciprocating Compressor,Light Liquid,Valve,Highflow,200836,0.051552749
+Battery Gas 4,Grande Prairie,Gas Multiwell effluent,,Leak,Screw Compressor - Electric Driver,Process Gas,Connector,Highflow,200840,0.016321421
+Battery Gas 40,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Separator,Process Gas,Connector,Highflow,200858,0.247490635
+Battery Gas 40,Grande Prairie,Gas Multiwell proration outside SE AB,,Vent,Production Tank (fixed roof),Light Liquid,Open-Ended Line,Estimate,200859,1.557940728
+Battery Gas 47,Grande Prairie,Gas Multiwell proration outside SE AB,,Leak,Flare KnockOut Drum,Process Gas,Connector,Highflow,200857,0.065521244
+Battery Gas 66,Midnapore,Gas Multiwell proration outside SE AB,,Vent,Production Tank (fixed roof),Light Liquid,Thief Hatch,Estimate,1,0.810784572
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Separator,Process Gas,Connector,Highflow,200849,0.048842947
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Valve,Highflow,200841,0.032561965
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Connector,Highflow,200843,0.244214737
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Regulator,Highflow,200846,0.032561965
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Connector,Highflow,200847,0.081404912
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Connector,Highflow,8946,0.13024786
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Connector,Highflow,200842,0.488429474
+Battery Gas 9,Grande Prairie,Gas Multiwell effluent,,Leak,Wellhead,Process Gas,Meter,Highflow,200844,0.048842947
+Gas Gathering 10,Midnapore,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201931,0.602695694
+Gas Gathering 10,Midnapore,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201932,2.582981545
+Gas Gathering 12,Red Deer,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,1,0.088803025
+Gas Gathering 13,Red Deer,Compressor Station,,Leak,Separator,Process Gas,Connector,Highflow,201374,0.093558162
+Gas Gathering 13,Red Deer,Compressor Station,,Leak,Separator,Process Gas,Connector,Highflow,201373,0.18283183
+Gas Gathering 13,Red Deer,Compressor Station,,Leak,Separator,Process Gas,Connector,Highflow,201375,0.031186054
+Gas Gathering 13,Red Deer,Compressor Station,,Leak,Separator,Process Gas,Control Valve,Highflow,201376,0.311860541
+Gas Gathering 14,Red Deer,Compressor Station,,Vent,Production Tank (fixed roof),Light Liquid,Thief Hatch,Estimate,1,0.223514127
+Gas Gathering 15,Grande Prairie,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Valve,Highflow,201475,0.172949468
+Gas Gathering 16,Midnapore,Compressor Station,,Leak,Screw Compressor,Process Gas,Regulator,Highflow,201919,0.203838069
+Gas Gathering 16,Midnapore,Compressor Station,,Leak,Screw Compressor,Process Gas,PRV/PSV,Highflow,201918,0.135892046
+Gas Gathering 17,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201835,1.165719693
+Gas Gathering 17,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201836,0.383460425
+Gas Gathering 17,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Estimate,201837,3.629647792
+Gas Gathering 2,Medicine Hat,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Connector,Estimate,1,0.240804234
+Gas Gathering 2,Medicine Hat,Compressor Station,,Leak,Other (describe in notes),Process Gas,Connector,Estimate,201910,0.064620492
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201333,0.078067958
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201334,0.015613592
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201336,0.138125559
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Connector,Highflow,201338,0.061389137
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Connector,Highflow,201339,0.092083706
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Control Valve,Highflow,201340,0.199514696
+Gas Gathering 20,Red Deer,Gas Gathering System,,Vent,Production Tank (fixed roof),Process Gas,Open-Ended Line,Estimate,201342,0.150615147
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201335,1.637987219
+Gas Gathering 20,Red Deer,Gas Gathering System,,Unlit Flare,Flare KnockOut Drum,Process Gas,Open-Ended Line,Estimate,201341,3.778311466
+Gas Gathering 20,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Light Liquid,Connector,Highflow,201337,0.109696258
+Gas Gathering 21,Red Deer,Gas Gathering System,,Leak,Screw Compressor,Process Gas,Control Valve,Highflow,201357,0.518562777
+Gas Gathering 21,Red Deer,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Regulator,Highflow,201360,0.045295145
+Gas Gathering 21,Red Deer,Gas Gathering System,,Unlit Flare,Flare KnockOut Drum,Process Gas,Open-Ended Line,Estimate,201361,1.471458899
+Gas Gathering 22,Drayton Valley,Gas Gathering System,,Leak,Reciprocating Compressor - Electric Driver,Process Gas,PRV/PSV,Highflow,201980,0.692990466
+Gas Gathering 22,Drayton Valley,Gas Gathering System,,Leak,Reciprocating Compressor - Electric Driver,Process Gas,Valve,Highflow,201979,0.307995763
+Gas Gathering 25,Red Deer,Gas Gathering System,,Leak,Pig Trap,Process Gas,Open-Ended Line,Highflow,201345,0.326858799
+Gas Gathering 25,Red Deer,Gas Gathering System,,Leak,Gas Pipeline Header,Process Gas,Connector,Highflow,201346,0.140082342
+Gas Gathering 25,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201347,0.544764665
+Gas Gathering 25,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201348,0.154080919
+Gas Gathering 25,Red Deer,Gas Gathering System,,Leak,Production Tank (fixed roof),Process Gas,Open-Ended Line,Estimate,201344,7.435409242
+Gas Gathering 26,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,204046,0.031707149
+Gas Gathering 26,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,204045,0.015853575
+Gas Gathering 26,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,204044,0.015853575
+Gas Gathering 26,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,204047,0.539021536
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Gas Pipeline Header,Process Gas,Control Valve,Highflow,204000,0.078502154
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Open-Ended Line,Highflow,204001,1.011847036
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,2004001,0.064079606
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Gas Pipeline Header,Process Gas,Connector,Highflow,2004002,0.046539468
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Gas Pipeline Header,Process Gas,Connector,Highflow,204003,0.015513156
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Gas Pipeline Header,Process Gas,Connector,Highflow,204004,0.031026312
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,204007,0.639896033
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,PRV/PSV,Highflow,204008,0.262521449
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,204009,0.063383996
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Estimate,204010,0.147501851
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,204011,0.049222772
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,204012,0.529652582
+Gas Gathering 30,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,204013,0.687133139
+Gas Gathering 31,Medicine Hat,Gas Gathering System,,Leak,Gas Pipeline Header,Process Gas,Regulator,Highflow,204006,0.185012645
+Gas Gathering 31,Medicine Hat,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Connector,Highflow,204014,0.031037672
+Gas Gathering 31,Medicine Hat,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Connector,Highflow,204015,0.092810733
+Gas Gathering 31,Medicine Hat,Gas Gathering System,,Leak,Flare KnockOut Drum,Process Gas,Connector,Highflow,204014,0.014960806
+Gas Gathering 31,Medicine Hat,Gas Gathering System,,Leak,Separator,Process Gas,Meter,Highflow,204005,0.094162495
+Gas Gathering 34,Drayton Valley,Gas Gathering System,,Leak,Screw Compressor,Process Gas,Connector,Highflow,201964,0.015022747
+Gas Gathering 34,Drayton Valley,Gas Gathering System,,Leak,Screw Compressor,Process Gas,Connector,Highflow,201965,0.015022747
+Gas Gathering 35,Drayton Valley,Gas Gathering System,,Leak,Screw Compressor,Process Gas,Connector,Highflow,201966,0.02974788
+Gas Gathering 35,Drayton Valley,Gas Gathering System,,Leak,Screw Compressor,Process Gas,Regulator,Highflow,201967,0.02974788
+Gas Gathering 37,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201325,0.01596805
+Gas Gathering 37,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,201326,0.718562262
+Gas Gathering 37,Red Deer,Gas Gathering System,,Leak,Dehydrator - Glycol,Process Gas,Connector,Highflow,201327,0.015881633
+Gas Gathering 38,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Connector,Highflow,11,0.033427695
+Gas Gathering 38,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Estimate,201911,0.077955972
+Gas Gathering 39,Midnapore,Gas Gathering System,,Leak,Flare KnockOut Drum,Process Gas,Valve,Highflow,6821,0.046851453
+Gas Gathering 39,Midnapore,Gas Gathering System,,Leak,Flare KnockOut Drum,Process Gas,Valve,Highflow,204038,0.046851453
+Gas Gathering 4,Red Deer,Compressor Station,,Vent,Reciprocating Compressor,Process Gas,Open-Ended Line,Estimate,201358,1.099867704
+Gas Gathering 4,Red Deer,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201359,0.215281635
+Gas Gathering 41,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201378,0.890319712
+Gas Gathering 41,Red Deer,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,1,2.569089135
+Gas Gathering 41,Red Deer,Gas Gathering System,,Unlit Flare,Flare KnockOut Drum,Process Gas,Open-Ended Line,Estimate,1,2.235141269
+Gas Gathering 45,Medicine Hat,Gas Gathering System,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201834,0.384401109
+Gas Gathering 47,Midnapore,Gas Gathering System,,Leak,Other (describe in notes),Process Gas,Connector,Estimate,204043,0.014940836
+Gas Gathering 47,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor - Electric Driver,Process Gas,Connector,Estimate,204042,0.074451076
+Gas Gathering 47,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor - Electric Driver,Process Gas,Connector,Estimate,204041,0.074451076
+Gas Gathering 47,Midnapore,Gas Gathering System,,Leak,Reciprocating Compressor - Electric Driver,Process Gas,Connector,Estimate,204040,0.02978043
+Gas Gathering 5,Midnapore,Compressor Station,,Vent,Production Tank (fixed roof),Light Liquid,Open-Ended Line,Estimate,1,16.16130375
+Gas Gathering 5,Midnapore,Compressor Station,,Leak,Screw Compressor,Process Gas,Regulator,Highflow,201920,0.386758494
+Gas Gathering 9,Grande Prairie,Compressor Station,,Leak,Separator,Process Gas,Regulator,Highflow,201447,0.04872622
+Gas Gathering 9,Grande Prairie,Compressor Station,,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,201448,0.260028161
+Well Gas 102,Drayton Valley,Gas Single,GAS FLOW,Leak,Wellhead,Process Gas,Open-Ended Line,Highflow,201971,0.015330222
+Well Gas 107,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Wellhead,Process Gas,Connector,Highflow,201208,0.476440641
+Well Gas 107,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Centrifugal Compressor,Process Gas,Connector,Highflow,201209,0.25927876
+Well Gas 108,Red Deer,Gas Multiwell Group,GAS FLOW,Vent,Wellhead,Process Gas,Open-Ended Line,Highflow,204072,0.0304461
+Well Gas 11,Midnapore,Gas Multiwell Group,GAS FLOW,Leak,Wellhead,Process Gas,SCVF,Highflow,204066,0.015074492
+Well Gas 111,Grande Prairie,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Pump Seal,Highflow,200850,0.161527311
+Well Gas 112,Midnapore,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Gas Pipeline Header,Process Gas,Open-Ended Line,Highflow,201831,0.308884633
+Well Gas 114,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Wellhead,Process Gas,Valve,Estimate,1,2.838719092
+Well Gas 120,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,201370,0.046297272
+Well Gas 120,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Regulator,Highflow,201371,0.015432424
+Well Gas 120,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Control Valve,Highflow,201372,0.030864848
+Well Gas 129,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Regulator,Highflow,204082,0.015587799
+Well Gas 129,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Regulator,Highflow,204083,0.015741626
+Well Gas 13,Red Deer,Gas Single,GAS FLOW,Leak,Production Tank (fixed roof),Process Gas,Connector,Estimate,1,0.327976372
+Well Gas 131,Midnapore,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,204050,0.015670894
+Well Gas 131,Midnapore,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,Regulator,Highflow,204049,0.047012682
+Well Gas 132,Red Deer,Gas Multiwell Group,GAS PUMP,Vent,Production Tank (fixed roof),Process Gas,Open-Ended Line,Estimate,204084,0.374713701
+Well Gas 132,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,SCVF,Highflow,204085,3.402082965
+Well Gas 133,Midnapore,Gas Multiwell proration outside SE AB,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,201912,0.366384648
+Well Gas 136,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,204089,0.125367152
+Well Gas 140,Midnapore,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,Control Valve,Highflow,204048,0.0634366
+Well Gas 141,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,204086,0.17024424
+Well Gas 141,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,204087,0.015274108
+Well Gas 141,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Connector,Highflow,204088,0.030548217
+Well Gas 148,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,204090,0.07586166
+Well Gas 148,Red Deer,Gas Multiwell Group,GAS PUMP,Vent,Production Tank (fixed roof),Light Liquid,Open-Ended Line,Estimate,204091,0.36239845
+Well Gas 152,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Connector,Highflow,204055,0.358455149
+Well Gas 155,Midnapore,Gas Multiwell Group,GAS PUMP,Vent,Separator,Process Gas,Connector,Highflow,204060,0.360822336
+Well Gas 155,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,204061,0.062751711
+Well Gas 155,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,SCVF,Highflow,204062,0.047063783
+Well Gas 163,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,204092,1.881369164
+Well Gas 165,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,201376,0.177058535
+Well Gas 165,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,201377,0.140366102
+Well Gas 167,Drayton Valley,Gas Single,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,201968,0.374318022
+Well Gas 168,Grande Prairie,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Estimate,201481,0.048427327
+Well Gas 169,Drayton Valley,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Valve,Highflow,201413,0.295793928
+Well Gas 169,Drayton Valley,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Regulator,Estimate,201385,0.028260721
+Well Gas 17,Midnapore,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Other (describe in notes),Process Gas,Connector,Highflow,201914,0.083374726
+Well Gas 17,Midnapore,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Other (describe in notes),Process Gas,Meter,Highflow,201915,0.06661539
+Well Gas 17,Midnapore,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Other (describe in notes),Process Gas,Connector,Highflow,201917,0.166538476
+Well Gas 17,Midnapore,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Other (describe in notes),Process Gas,Regulator,Highflow,201916,0.06661539
+Well Gas 17,Midnapore,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Separator,Process Gas,Regulator,Highflow,201913,0.049961543
+Well Gas 171,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,SCVF,Calscan,201210,50.54761053
+Well Gas 177,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Well Pump,Process Gas,Pump Seal,Highflow,204078,0.063182772
+Well Gas 177,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,204079,0.031591386
+Well Gas 177,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Regulator,Highflow,204080,0.031591386
+Well Gas 177,Red Deer,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Connector,Highflow,204081,0.046763397
+Well Gas 178,Grande Prairie,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,201479,0.172949468
+Well Gas 178,Grande Prairie,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,SCVF,Highflow,201480,0.171961536
+Well Gas 18,Grande Prairie,Gas Multiwell Group,GAS FLOW,Leak,Wellhead,Process Gas,Connector,Highflow,200812,0.080459568
+Well Gas 183,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Liquid Pump,Process Gas,Control Valve,Highflow,204054,0.015691334
+Well Gas 183,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,204052,0.015670894
+Well Gas 183,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,204051,0.015670894
+Well Gas 183,Midnapore,Gas Multiwell Group,GAS PUMP,Leak,Separator,Process Gas,Valve,Highflow,204053,0.047012682
+Well Gas 189,Midnapore,Gas Multiwell effluent,GAS PUMP,Leak,Wellhead,Process Gas,Connector,Highflow,204039,0.047560724
+Well Gas 20,Red Deer,Gas Single,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204096,0.281626392
+Well Gas 20,Red Deer,Gas Single,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204097,0.469377321
+Well Gas 20,Red Deer,Gas Single,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204099,0.015645911
+Well Gas 20,Red Deer,Gas Single,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204100,0.156459107
+Well Gas 20,Red Deer,Gas Single,GAS FLOW,Unlit Flare,Flare KnockOut Drum,Process Gas,Open-Ended Line,Estimate,201369,0.220319492
+Well Gas 20,Red Deer,Gas Single,GAS FLOW,Leak,Separator,Process Gas,Meter,Highflow,204098,0.174519925
+Well Gas 27,Midnapore,Gas Multiwell Group,GAS FLOW,Leak,Wellhead,Process Gas,SCVF,Highflow,204063,0.046755019
+Well Gas 27,Midnapore,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204064,0.062326491
+Well Gas 37,Grande Prairie,Gas Single,GAS FLOW,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,200852,0.113964978
+Well Gas 37,Grande Prairie,Gas Single,GAS FLOW,Leak,Reciprocating Compressor,Process Gas,Compressor Seal,Highflow,200853,2.376983825
+Well Gas 40,Red Deer,Gas Single,GAS FLOW,Vent,Production Tank (fixed roof),Light Liquid,Open-Ended Line,Estimate,204095,0.073908937
+Well Gas 40,Red Deer,Gas Single,GAS FLOW,Leak,Wellhead,Process Gas,SCVF,Highflow,204094,0.030943039
+Well Gas 5,Red Deer,Gas Single,GAS FLOW,Leak,Wellhead,Process Gas,Valve,Highflow,201343,0.256798373
+Well Gas 57,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204073,0.211707309
+Well Gas 57,Red Deer,Gas Multiwell Group,GAS FLOW,Vent,Wellhead,Process Gas,Open-Ended Line,Highflow,204074,1.224878003
+Well Gas 58,Midnapore,Gas Multiwell Group,GAS FLOW,Leak,Separator,Process Gas,Connector,Highflow,204056,0.308563788
+Well Gas 61,Red Deer,Gas Single,GAS FLOW,Vent,Production Tank (fixed roof),Process Gas,Open-Ended Line,Estimate,1,0.033086524
+Well Gas 63,Red Deer,Gas Multiwell effluent,GAS FLOW,Leak,Line Heater,Process Gas,Regulator,Highflow,204057,0.031341788
+Well Gas 63,Red Deer,Gas Multiwell effluent,GAS FLOW,Leak,Line Heater,Process Gas,Connector,Highflow,204058,0.062683576
+Well Gas 63,Red Deer,Gas Multiwell effluent,GAS FLOW,Leak,Wellhead,Process Gas,SCVF,Highflow,204059,0.031341788
+Well Gas 66,Red Deer,Gas Single,GAS FLOW,Leak,Production Tank (fixed roof),Process Gas,Connector,Highflow,201210,1.73E-05
+Well Gas 75,Red Deer,Gas Multiwell Group,GAS FLOW,Leak,Wellhead,Process Gas,Valve,Highflow,204071,0.015274108
+Well Gas 79,Grande Prairie,Gas Multiwell effluent,GAS FLOW,Leak,Wellhead,Process Gas,Valve,Highflow,200845,0.016280982
+Well Gas 81,Grande Prairie,Gas Multiwell proration outside SE AB,GAS FLOW,Leak,Wellhead,Process Gas,Connector,Estimate,200826,0.467382218
+Well Gas 89,Red Deer,Gas Multiwell effluent,GAS FLOW,Leak,Wellhead,Process Gas,Connector,Highflow,201482,0.048253138

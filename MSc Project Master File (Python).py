@@ -16,7 +16,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-import statistics
+import statistics as stats
 #-------------------------------------------------------------------------------
 #Characterisation of EUR Data Script
 #Source: Balcombe et al (2015)
@@ -34,14 +34,20 @@ EUR_Data.iloc[14,1] = "US"
 EUR_Data.iloc[24,1] = "US" #Change it into regular expressions later
 EUR_Data["EUR_m3"] = EUR_Data["Value"] * 1000000
 EUR_Data["LN_EUR_m3"] = np.log(EUR_Data["EUR_m3"])
-Mean_EUR = round(statistics.mean(EUR_Data["Value"]))
-SD_EUR = statistics.stdev(EUR_Data["Value"])
-Median_EUR = round(statistics.median(EUR_Data["LN_EUR_m3"]))
-Mean_LN_EUR_m3 = round(statistics.mean(EUR_Data["LN_EUR_m3"]))
-SD_LN_EUR_m3 = statistics.stdev(EUR_Data["LN_EUR_m3"])
-Median_LN_EUR_m3 = round(statistics.median(EUR_Data["LN_EUR_m3"]))
-Mean_LN_EUR = round(statistics.mean(EUR_Data.iloc[:,6]))
-SD_LN_EUR = statistics.stdev(EUR_Data.iloc[:,6])
-Median_LN_EUR = round(statistics.median(EUR_Data.iloc[:,6]))
+Mean_EUR = round(stats.mean(EUR_Data["Value"]))
+SD_EUR = stats.stdev(EUR_Data["Value"])
+Median_EUR = round(stats.median(EUR_Data["LN_EUR_m3"]))
+Mean_LN_EUR_m3 = round(stats.mean(EUR_Data["LN_EUR_m3"]))
+SD_LN_EUR_m3 = stats.stdev(EUR_Data["LN_EUR_m3"])
+Median_LN_EUR_m3 = round(stats.median(EUR_Data["LN_EUR_m3"]))
+Mean_LN_EUR = round(stats.mean(EUR_Data.iloc[:,6]))
+SD_LN_EUR = stats.stdev(EUR_Data.iloc[:,6])
+Median_LN_EUR = round(stats.median(EUR_Data.iloc[:,6]))
 #--------------------------------------------------------
 #Probability Distribution Data Fitting 
+import scipy.stats as s #Use scipy.stats, numpy and matplotlin for the distribution fitting
+#Weibull Distribution
+fwEUR = s.exponweib.fit(EUR_Data["Value"], floc=0, f0=1)
+plt.plot(EUR_Data["Value"],s.exponweib.pdf(EUR_Data["Value"],*s.exponweib.fit(EUR_Data["Value"], 1, 1, scale=02, loc=0)))
+plt.hist(EUR_Data["Value"], bins=np.linspace(0, 16, 33), alpha=0.5)
+

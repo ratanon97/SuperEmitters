@@ -16,6 +16,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
+import statistics
 #-------------------------------------------------------------------------------
 #Characterisation of EUR Data Script
 #Source: Balcombe et al (2015)
@@ -31,4 +32,16 @@ EUR_Data = pd.read_csv("US_EUR_Data.csv")
 import re #Regular Expresions  
 EUR_Data.iloc[14,1] = "US"
 EUR_Data.iloc[24,1] = "US" #Change it into regular expressions later
-EUR_Data[]
+EUR_Data["EUR_m3"] = EUR_Data["Value"] * 1000000
+EUR_Data["LN_EUR_m3"] = np.log(EUR_Data["EUR_m3"])
+Mean_EUR = round(statistics.mean(EUR_Data["Value"]))
+SD_EUR = statistics.stdev(EUR_Data["Value"])
+Median_EUR = round(statistics.median(EUR_Data["LN_EUR_m3"]))
+Mean_LN_EUR_m3 = round(statistics.mean(EUR_Data["LN_EUR_m3"]))
+SD_LN_EUR_m3 = statistics.stdev(EUR_Data["LN_EUR_m3"])
+Median_LN_EUR_m3 = round(statistics.median(EUR_Data["LN_EUR_m3"]))
+Mean_LN_EUR = round(statistics.mean(EUR_Data.iloc[:,6]))
+SD_LN_EUR = statistics.stdev(EUR_Data.iloc[:,6])
+Median_LN_EUR = round(statistics.median(EUR_Data.iloc[:,6]))
+#--------------------------------------------------------
+#Probability Distribution Data Fitting 

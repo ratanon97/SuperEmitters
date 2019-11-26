@@ -55,10 +55,10 @@ library(actuar) #Load this library to import log-logistic functions to create lo
 #Object name goes in order: f, w/g/ln/ll, data you want to fit
 #f = fit, #w,g,ln,ll = Weibull, Gamma, Log Normal, Log Logistic 
 #Fit your associated data with the four distributions
-fwEUR <- fitdist(EUR_Data$Value,"weibull") #Weibull Distribution
-fgEUR <- fitdist(EUR_Data$Value,"gamma") #Gamma Distribution
-flnEUR <- fitdist(EUR_Data$Value,"lnorm")# Log-Normal Distribution
-fllEUR <- fitdist(EUR_Data$Value,"llogis") #Log-Logistic Distribution 
+fwEUR <- fitdist(EUR_Data$EUR,"weibull") #Weibull Distribution
+fgEUR <- fitdist(EUR_Data$EUR,"gamma") #Gamma Distribution
+flnEUR <- fitdist(EUR_Data$EUR,"lnorm")# Log-Normal Distribution
+fllEUR <- fitdist(EUR_Data$EUR,"llogis") #Log-Logistic Distribution 
 #Acronym List
 #C = Cumulative
 #Prob = Probability

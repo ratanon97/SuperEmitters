@@ -47,11 +47,11 @@ Median_LN_EUR = round(stats.median(EUR_Data.iloc[:,6]))
 #Probability Distribution Data Fitting 
 import scipy.stats as s #Use scipy.stats, numpy and matplotlin for the distribution fitting
 #Weibull Distribution
-(exp1, k1, loc1, lam1) = s.exponweib.fit(EUR_Data["Value"], floc=0, f0=1) #Shape Parameter is f0, Location Parameter is 0
+wshape,wlocation,wscale = s.invweibull.fit(EUR_Data["Value"],floc=0,f0=1) #Estimate parameters for the plot using the MLE estimate
 sns.set_style("whitegrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK
 fig.set_size_inches(11.7,8.27)
-plt.plot(EUR_Data["Value"],s.exponweib.pdf(EUR_Data["Value"],exp1, k1, loc1, lam1))
+plt.plot(EUR_Data["Value"],s.invweibull.pdf(EUR_Data["Value"],wshape,wlocation,wscale))
 #plt.hist(EUR_Data["Value"], bins=np.linspace(0, 16, 33), alpha=0.5)
 plt.title('Histogram and Distribution Curves of US', fontsize = 20)
 plt.xlabel('EUR (Mm3)',fontsize = 14)

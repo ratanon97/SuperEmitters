@@ -29,7 +29,6 @@ os.chdir("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Res
 EUR_Data = pd.read_csv("US_EUR_Data.csv")
 #------------------------------------------------------------------------------
 #Data Frame Preparation
-import re #Regular Expresions  
 EUR_Data.iloc[14,1] = "US"
 EUR_Data.iloc[24,1] = "US" #Change it into regular expressions later
 EUR_Data["EUR_m3"] = EUR_Data["Value"] * 1000000
@@ -47,11 +46,13 @@ Median_LN_EUR = round(stats.median(EUR_Data.iloc[:,6]))
 #Probability Distribution Data Fitting 
 import scipy.stats as s #Use scipy.stats, numpy and matplotlin for the distribution fitting
 #Weibull Distribution
-wshape,wlocation,wscale = s.invweibull.fit(EUR_Data["Value"],floc=0,f0=1) #Estimate parameters for the plot using the MLE estimate
+fwEURshape,fwEURlocation,fwEURscale = s.invweibull.fit(EUR_Data["Value"],floc=0,f0=1) #Estimate parameters for the plot using the MLE estimate
+fgEURshape,fgEURlocation,fgEURscale = s.gamma.fit(EUR_Data["Value"],floc=0,f0=1) #Estimate parameters for the plot using the MLE estimate
 sns.set_style("whitegrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK
 fig.set_size_inches(11.7,8.27)
-plt.plot(EUR_Data["Value"],s.invweibull.pdf(EUR_Data["Value"],wshape,wlocation,wscale))
+plt.plot(EUR_Data["Value"],s.invweibull.pdf(EUR_Data["Value"],fwEURshape,fwEURlocation,fwEURscale))
+plt.plot(EUR_Data["Value"],s.gamma.pdf(EUR_Data["Value"],fgEURshape,fgEURlocation,fgEURscale))
 #plt.hist(EUR_Data["Value"], bins=np.linspace(0, 16, 33), alpha=0.5)
 plt.title('Histogram and Distribution Curves of US', fontsize = 20)
 plt.xlabel('EUR (Mm3)',fontsize = 14)

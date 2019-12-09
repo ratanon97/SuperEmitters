@@ -62,5 +62,7 @@ plt.title('Histogram and Distribution Curves of US EUR Data', fontsize = 20)
 plt.xlabel('EUR (Mm3)',fontsize = 14)
 plt.ylabel('Density',fontsize = 14)
 plt.legend(frameon=True,fancybox=True,
-           shadow=True,framealpha=1,prop={"size":20})
+           shadow=True,framealpha=1,prop={"size":14})
 plt.show()
+#Implement AIC, BIC Criterion and MLE best fit
+#Cumulative Distribution Data Fitting

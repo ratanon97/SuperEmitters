@@ -6,7 +6,7 @@ This project was conducted under the [Sustainable Gas Institute](https://www.sus
 
 This project was supervised by [Dr. Adam Hawkes](https://www.imperial.ac.uk/people/a.hawkes) as my primary supervisor. My co-supervisors  were [Dr. Paul Balcombe](https://www.imperial.ac.uk/people/p.balcombe) and [Dr. Jasmin Cooper](https://www.imperial.ac.uk/people/jasmin.cooper), whom I spent most of my time with during the project. All relevant information and reports were submitted to Imperial College London's Department of Chemical Engineering. 
 
-The nature of the project was to model the methane emissions in the natural gas supply chain, mainly using statistics in the technical assessment part of the project to identify super-emitters. The programming language of choice for this project is R. The language was chosen for its excellent statistical computing abilities, a wide range of unique statistical packages and efficient handling of big data. A Python version would be uploaded in due time for learning purposes.
+The nature of the project was to model the methane emissions in the natural gas supply chain, mainly using statistics in the technical assessment part of the project to identify super-emitters. The programming language of choice for this project is R. The language was chosen for its excellent statistical computing abilities, a wide range of unique statistical packages and efficient handling of big data. A Python version is currently being written for learning purposes.
 
 ## Abstract
 Super-emitters are infamously known for emitting high amounts of methane in the oil/gas industry. They are stochastic by nature as methane emissions vary in the natural gas supply chain by numerous factors, hence it is difficult to predict their existence.

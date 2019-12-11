@@ -4,6 +4,7 @@
 <img align = "right" width="400" height="223" src="https://events.imeche.org/EventMedia/Images/Logo-Sponsors/49fba76b4c014357b9434d25c4939eb2.png">
 
 
+
 This is the README file of my MSc Advanced Chemical Engineering with Process Systems Engineering's thesis project in the academic year 2018-2019 of Imperial College London
 
 This project was conducted under the [Sustainable Gas Institute](https://www.sustainablegasinstitute.org/) (SGI), part of Imperial College London. SGI incorporates world-class research in the themes of science, engineering, economics, policy and business to support the energy industry in hopes of transitioning into the low-carbon economy. 

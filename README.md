@@ -1,6 +1,9 @@
 # Techno-Economic Assessment of Options to Mitigate Super-Emitters in the Natural Gas Supply Chain
 
 <p align="center">
+  <img width="500" height="279" src="http://allvectorlogo.com/img/2019/07/imperial-college-london-logo-vector.png">
+</p>
+<p align="center">
   <img width="500" height="171" src="https://pbs.twimg.com/media/ELgjFaUX0AAVEZ5?format=png&name=900x900">
 </p>
 

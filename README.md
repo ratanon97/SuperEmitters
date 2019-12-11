@@ -1,7 +1,7 @@
 # Techno-Economic Assessment of Options to Mitigate Super-Emitters in the Natural Gas Supply Chain
 
 <p align="center">
-  <img width="460" height="300" src="https://media.licdn.com/dms/image/C4D0BAQG2VVxQgyx2Wg/company-logo_200_200/0?e=2159024400&v=beta&t=DHxdpvVzqcQXB5e_OiS0wLzyznvjXFw266enGSFcrsM">
+  <img width="400" height="400" src="https://media.licdn.com/dms/image/C4D0BAQG2VVxQgyx2Wg/company-logo_200_200/0?e=2159024400&v=beta&t=DHxdpvVzqcQXB5e_OiS0wLzyznvjXFw266enGSFcrsM">
 </p>
 
 This is the README file of my MSc Advanced Chemical Engineering with Process Systems Engineering's thesis project in the academic year 2018-2019 of Imperial College London

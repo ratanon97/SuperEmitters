@@ -66,6 +66,8 @@ plt.legend(frameon=True,fancybox=True,
            shadow=True,framealpha=1,prop={"size":14})
 plt.show()
 #Implement AIC, BIC Criterion and MLE best fit
+def AIC(length,log_lik):
+    return 2*length - 2*(log_lik)
 #Cumulative Distribution Data Fitting
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK

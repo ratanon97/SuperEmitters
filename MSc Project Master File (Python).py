@@ -69,6 +69,16 @@ plt.show()
 #Implement AIC, BIC Criterion and MLE best fit
 def AIC(length,log_lik):
     return 2*length - 2*(log_lik)
+def log_likelihoodW(data,fitted_params):
+    return np.sum(s.invweibull.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+def log_likelihoodG(data,fitted_params):
+    return np.sum(s.gamma.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+def log_likelihoodLN(data,fitted_params):
+    return np.sum(s.lognorm.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+def log_likelihoodLL(data,fitted_params):
+    return np.sum(s.fisk.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+fwlength = len(fwEUR)
+
 #Cumulative Distribution Data Fitting
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK

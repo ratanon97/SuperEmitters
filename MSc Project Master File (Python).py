@@ -46,18 +46,19 @@ test = EUR_Data["Value"] * 2
 #--------------------------------------------------------
 #Probability Distribution Data Fitting 
 import scipy.stats as s #Use scipy.stats, numpy and matplotlib for the distribution fitting
-fwEURshape,fwEURlocation,fwEURscale = s.invweibull.fit(EUR_Data["Value"] ) #Weibull Distribution
-fgEURshape,fgEURlocation,fgEURscale = s.gamma.fit(EUR_Data["Value"]) #Gamma Distribution
-flnEURshape,flnEURlocation,flnEURscale = s.lognorm.fit(EUR_Data["Value"]) #Log-Normal Distribution
-fllEURshape,fllEURlocation,fllEURscale = s.fisk.fit(EUR_Data["Value"]) #Log-Logistic Distribution (Fisk in scipy)
+#3 tuples are produced based on the fit function: Index 0 = Shape, Index 1 =Location Index 2 = Scale
+fwEUR = s.invweibull.fit(EUR_Data["Value"] ) #Weibull Distribution
+fgEUR = s.gamma.fit(EUR_Data["Value"]) #Gamma Distribution
+flnEUR = s.lognorm.fit(EUR_Data["Value"]) #Log-Normal Distribution
+fllEUR = s.fisk.fit(EUR_Data["Value"]) #Log-Logistic Distribution (Fisk in scipy)
 #Estimate parameters for the plot using the MLE estimate
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK
 fig.set_size_inches(11.7,8.27)
-plt.plot(EUR_Data["Value"],s.invweibull.pdf(EUR_Data["Value"],fwEURshape,fwEURlocation,fwEURscale),label="Weibull")
-plt.plot(EUR_Data["Value"],s.gamma.pdf(EUR_Data["Value"],fgEURshape,fgEURlocation,fgEURscale),label="Gamma")
-plt.plot(EUR_Data["Value"],s.lognorm.pdf(EUR_Data["Value"],flnEURshape,flnEURlocation,flnEURscale),label="Log-Normal")
-plt.plot(EUR_Data["Value"],s.fisk.pdf(EUR_Data["Value"],fllEURshape,fllEURlocation,fllEURscale),label="Log-Logistic")
+plt.plot(EUR_Data["Value"],s.invweibull.pdf(EUR_Data["Value"],fwEUR[0],fwEUR[1],fwEUR[2]),label="Weibull")
+plt.plot(EUR_Data["Value"],s.gamma.pdf(EUR_Data["Value"],fgEUR[0],fgEUR[1],fgEUR[2]),label="Gamma")
+plt.plot(EUR_Data["Value"],s.lognorm.pdf(EUR_Data["Value"],flnEUR[0],flnEUR[1],flnEUR[2]),label="Log-Normal")
+plt.plot(EUR_Data["Value"],s.fisk.pdf(EUR_Data["Value"],fllEUR[0],fllEUR[1],fllEUR[2]),label="Log-Logistic")
 #plt.hist(EUR_Data["Value"], bins=np.linspace(0, 16, 33), alpha=0.5)
 plt.title('Probability Distribution Curves of US EUR Data', fontsize = 20)
 plt.xlabel('EUR (Mm3)',fontsize = 14)
@@ -72,10 +73,10 @@ def AIC(length,log_lik):
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK
 fig.set_size_inches(11.7,8.27)
-plt.plot(EUR_Data["Value"],s.invweibull.cdf(EUR_Data["Value"],fwEURshape,fwEURlocation,fwEURscale),label="Weibull")
-plt.plot(EUR_Data["Value"],s.gamma.cdf(EUR_Data["Value"],fgEURshape,fgEURlocation,fgEURscale),label="Gamma")
-plt.plot(EUR_Data["Value"],s.lognorm.cdf(EUR_Data["Value"],flnEURshape,flnEURlocation,flnEURscale),label="Log-Normal")
-plt.plot(EUR_Data["Value"],s.fisk.cdf(EUR_Data["Value"],fllEURshape,fllEURlocation,fllEURscale),label="Log-Logistic")
+plt.plot(EUR_Data["Value"],s.invweibull.cdf(EUR_Data["Value"],fwEUR[0],fwEUR[1],fwEUR[2]),label="Weibull")
+plt.plot(EUR_Data["Value"],s.gamma.cdf(EUR_Data["Value"],fgEUR[0],fgEUR[1],fgEUR[2]),label="Gamma")
+plt.plot(EUR_Data["Value"],s.lognorm.cdf(EUR_Data["Value"],flnEUR[0],flnEUR[1],flnEUR[2]),label="Log-Normal")
+plt.plot(EUR_Data["Value"],s.fisk.cdf(EUR_Data["Value"],fllEUR[0],fllEUR[1],fllEUR[2]),label="Log-Logistic")
 #plt.hist(EUR_Data["Value"], bins=np.linspace(0, 16, 33), alpha=0.5)
 plt.title('Cumulative Probability Distribution Curves of US EUR Data', fontsize = 20)
 plt.xlabel('EUR (Mm3)',fontsize = 14)

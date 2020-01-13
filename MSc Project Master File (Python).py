@@ -80,6 +80,9 @@ def log_likelihoodLNPDF(data,fitted_params):
 def log_likelihoodLLPDF(data,fitted_params):
     return np.sum(s.fisk.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
 fwlength = len(fwEUR)
+fglength = len(fgEUR)
+flnlength = len(flnEUR)
+flllength = len(fllEUR)
 #Cumulative Distribution Data Fitting
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK

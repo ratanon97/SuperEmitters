@@ -88,6 +88,13 @@ fgLogLikEUR = log_likelihoodGPDF(EUR_Data["Value"],fgEUR)
 flnLogLikEUR = log_likelihoodLNPDF(EUR_Data["Value"],flnEUR)
 fllLogLikEUR = log_likelihoodLLPDF(EUR_Data["Value"],fllEUR)
 fwAIC = AIC(fwlength,fwLogLikEUR)
+fgAIC = AIC(fglength,fgLogLikEUR)
+flnAIC = AIC(flnlength,flnLogLikEUR)
+fllAIC = AIC(flllength,fllLogLikEUR)
+fwBIC = BIC(fwlength,EUR_Data["Value"],fwLogLikEUR)
+fgBIC = BIC(fglength,EUR_Data["Value"],fgLogLikEUR)
+flnBIC = BIC(flnlength,EUR_Data["Value"],flnLogLikEUR)
+fllBIC = BIC(flllength,EUR_Data["Value"],fllLogLikEUR)
 #Cumulative Distribution Data Fitting
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK

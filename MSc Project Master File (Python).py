@@ -66,35 +66,6 @@ plt.ylabel('Density',fontsize = 14)
 plt.legend(frameon=True,fancybox=True,
            shadow=True,framealpha=1,prop={"size":14})
 plt.show()
-#Implement AIC, BIC Criterion and MLE best fit
-def AIC(length,log_lik):
-    return 2*length - 2*(log_lik)
-def BIC(log_lik,data,length):
-    return -2*log_lik + np.log(data)*length
-def log_likelihoodWPDF(data,fitted_params):
-    return np.sum(s.invweibull.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-def log_likelihoodGPDF(data,fitted_params):
-    return np.sum(s.gamma.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-def log_likelihoodLNPDF(data,fitted_params):
-    return np.sum(s.lognorm.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-def log_likelihoodLLPDF(data,fitted_params):
-    return np.sum(s.fisk.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-fwlength = len(fwEUR)
-fglength = len(fgEUR)
-flnlength = len(flnEUR)
-flllength = len(fllEUR)
-fwLogLikEUR = log_likelihoodWPDF(EUR_Data["Value"],fwEUR)
-fgLogLikEUR = log_likelihoodGPDF(EUR_Data["Value"],fgEUR)
-flnLogLikEUR = log_likelihoodLNPDF(EUR_Data["Value"],flnEUR)
-fllLogLikEUR = log_likelihoodLLPDF(EUR_Data["Value"],fllEUR)
-fwAIC = AIC(fwlength,fwLogLikEUR)
-fgAIC = AIC(fglength,fgLogLikEUR)
-flnAIC = AIC(flnlength,flnLogLikEUR)
-fllAIC = AIC(flllength,fllLogLikEUR)
-fwBIC = BIC(fwlength,EUR_Data["Value"],fwLogLikEUR)
-fgBIC = BIC(fglength,EUR_Data["Value"],fgLogLikEUR)
-flnBIC = BIC(flnlength,EUR_Data["Value"],flnLogLikEUR)
-fllBIC = BIC(flllength,EUR_Data["Value"],fllLogLikEUR)
 #Cumulative Distribution Data Fitting
 sns.set_style("darkgrid")
 fig, ax = plt.subplots() #Put the whole graph in a "subplot" but will still give a normal graph #HACK
@@ -110,3 +81,43 @@ plt.ylabel('Cumulative Density',fontsize = 14)
 plt.legend(frameon=True,fancybox=True,
            shadow=True,framealpha=1,prop={"size":14})
 plt.show()
+#Statistical Tests Calculations
+#Goodness-of-Fit Criterion Tests
+#Implement AIC, BIC Criterion and MLE best fit
+def AIC(length,log_lik):
+    return 2*length - 2*(log_lik)
+def BIC(log_lik,data,length):
+    return -2*log_lik + np.log(data)*length
+def log_likelihoodWPDF(data,fitted_params):
+    return np.sum(s.invweibull.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+def log_likelihoodGPDF(data,fitted_params):
+    return np.sum(s.gamma.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+def log_likelihoodLNPDF(data,fitted_params):
+    return np.sum(s.lognorm.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+def log_likelihoodLLPDF(data,fitted_params):
+    return np.sum(s.fisk.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
+#Length of the fit objects
+fwlength = len(fwEUR)
+fglength = len(fgEUR)
+flnlength = len(flnEUR)
+flllength = len(fllEUR)
+#Maximum Log-Likelihood Objects
+fwLogLikEUR = log_likelihoodWPDF(EUR_Data["Value"],fwEUR)
+fgLogLikEUR = log_likelihoodGPDF(EUR_Data["Value"],fgEUR)
+flnLogLikEUR = log_likelihoodLNPDF(EUR_Data["Value"],flnEUR)
+fllLogLikEUR = log_likelihoodLLPDF(EUR_Data["Value"],fllEUR)
+#AIC/BIC Criterion Tests
+fwAIC = AIC(fwlength,fwLogLikEUR)
+fgAIC = AIC(fglength,fgLogLikEUR)
+flnAIC = AIC(flnlength,flnLogLikEUR)
+fllAIC = AIC(flllength,fllLogLikEUR)
+fwBIC = BIC(fwlength,EUR_Data["Value"],fwLogLikEUR)
+fgBIC = BIC(fglength,EUR_Data["Value"],fgLogLikEUR)
+flnBIC = BIC(flnlength,EUR_Data["Value"],flnLogLikEUR)
+fllBIC = BIC(flllength,EUR_Data["Value"],fllLogLikEUR)
+#Goodness-of-Fit Statistics
+#KS Test
+fwKSEUR = s.kstest(fwEUR,"norm")
+fgKSEUR = s.kstest(fgEUR,"norm")
+flnKSEUR = s.kstest(flnEUR,"norm")
+fllKSEUR = s.kstest(fllEUR,"norm")

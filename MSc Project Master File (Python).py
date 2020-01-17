@@ -121,3 +121,8 @@ fwKSEUR = s.kstest(fwEUR,"norm")
 fgKSEUR = s.kstest(fgEUR,"norm")
 flnKSEUR = s.kstest(flnEUR,"norm")
 fllKSEUR = s.kstest(fllEUR,"norm")
+#AD Test
+fwADEUR = s.anderson(fwEUR,"norm")
+fgADEUR = s.anderson(fgEUR,"norm")
+flnADEUR = s.anderson(flnEUR,"norm")
+fllADEUR = s.anderson(fllEUR,"norm")

@@ -126,3 +126,19 @@ fwADEUR = s.anderson(fwEUR,"norm")
 fgADEUR = s.anderson(fgEUR,"norm")
 flnADEUR = s.anderson(flnEUR,"norm")
 fllADEUR = s.anderson(fllEUR,"norm")
+#------------------------------------------------------------------------------
+#Alberta GreenPath Fugitive Data Script
+#This script aims to evaluate the emission sources provided by GreenPath Energy
+#This script aims to find the best fitting probability distribution for the methane emissions data
+#Lorenz curves were applied to reporting segment and emission sources
+#Super-emitters can be identified through Lorenz curves using the 80/20 rule as a benchmark
+#If the remaining 20% of total population emits 80% of total emissions, then this is an indication of a super-emitter
+#Not all segments and sources were modelled due to the small amount of population it was collected
+#Top 5% emitters were evaluated to see the skewness contributions by the emitters to the Lorenz curves
+#Majority of the emissions are leaked emissions
+#Source script: Alberta GreenPath Fugitive Data
+#Report Source: GreenPath 2016 Alberta Fugitive and Vented Emissions Inventory Study
+#Import Emissions Data
+print(os.getcwd())
+os.chdir("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs")
+Fug_GreenPath = pd.read_csv("Alberta GreenPath Fugitive Data.csv")

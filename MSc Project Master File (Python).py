@@ -142,3 +142,43 @@ fllADEUR = s.anderson(fllEUR,"norm")
 print(os.getcwd())
 os.chdir("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs")
 Fug_GreenPath = pd.read_csv("Alberta GreenPath Fugitive Data.csv")
+#Extra Notes: Methane emissions were collected using bottom-up methods
+#GWP Used: GWP100 of 25 for Methane and GWP100 of 298 for NO2
+#Data was collected in the year of 2016
+#----------------------------------------------------------
+#Data Frame Preparation
+#Remove irrelevant columns 
+Fug_GreenPath = Fug_GreenPath.drop("Province",1)
+Fug_GreenPath = Fug_GreenPath.drop("Loc1",1)
+Fug_GreenPath = Fug_GreenPath.drop("Loc2",1)
+Fug_GreenPath.columns = ["Service_Area",
+                            "Unique_Location",
+                            "Facility_Type",
+                            "Facility_Commodity",
+                            "Facility_StartUp",
+                            "Year",
+                            "Process_Block",
+                            "Component_Main_Type",
+                            "Component_Sub_Type",
+                            "GPE_Tag",
+                            "GPE_Media",
+                            "Emission_Description",
+                            "Emission_Type",
+                            "Camera_Distance_ft",
+                            "Emission_Status",
+                            "Created_At",
+                            "Last_Inspected_At",
+                            "HSE_Issue",
+                            "Service_Type_Composition",
+                            "Service_Type",
+                            "Measurement_Method",
+                            "Emission_Rate_cfm",
+                            "Leak_Percentage",
+                            "Background_Percentage",
+                            "Flow",
+                            "12_Month_Production",
+                            "Extra_Notes"]
+#Data Frame Manipulation
+Fug_GreenPath["Emission_Rate_cmm"] = Fug_GreenPath["Emission_Rate_cfm"*0.035315] #To convert cubic feet to cubic metre, multiply cubic feet with 0.035315
+for i in range(0,len(Fug_GreenPath["Emission_Rate_cfm"])):
+    Fug_GreenPath["Emission_Rate_cmm"] = Fug_GreenPath["Emission_Rate_cfm"][i] * 0.035315

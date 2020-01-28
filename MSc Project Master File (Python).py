@@ -84,37 +84,63 @@ plt.show()
 #Statistical Tests Calculations
 #Goodness-of-Fit Criterion Tests
 #Implement AIC, BIC Criterion and MLE best fit
-def AIC(length,log_lik):
-    return 2*length - 2*(log_lik)
-def BIC(log_lik,data,length):
-    return -2*log_lik + np.log(data)*length
-def log_likelihoodWPDF(data,fitted_params):
-    return np.sum(s.invweibull.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-def log_likelihoodGPDF(data,fitted_params):
-    return np.sum(s.gamma.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-def log_likelihoodLNPDF(data,fitted_params):
-    return np.sum(s.lognorm.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-def log_likelihoodLLPDF(data,fitted_params):
-    return np.sum(s.fisk.logpdf(data,fitted_params[0],fitted_params[1],fitted_params[2]))
-#Length of the fit objects
-fwlength = len(fwEUR)
-fglength = len(fgEUR)
-flnlength = len(flnEUR)
-flllength = len(fllEUR)
+#OOP Approach
+class log_likelihoodPDF:
+    
+    #Attributes
+    def __init__(self,data,fitted_params):
+        self.data = data
+        self.fitted_params = fitted_params
+        
+    #Methods
+    def Weibull(self):
+        return np.sum(s.invweibull.logpdf(self.data,self.fitted_params[0],self.fitted_params[1],self.fitted_params[2]))
+    def Gamma(self):
+        return np.sum(s.gamma.logpdf(self.data,self.fitted_params[0],self.fitted_params[1],self.fitted_params[2]))
+    def LN(self):
+        return np.sum(s.lognorm.logpdf(self.data,self.fitted_params[0],self.fitted_params[1],self.fitted_params[2]))
+    def LL(self):
+        return np.sum(s.fisk.logpdf(self.data,self.fitted_params[0],self.fitted_params[1],self.fitted_params[2]))
+            
+class StatisticalTests:
+    
+    #Attributes
+    def __init__(self,length,log_lik,data):
+        self.length = length
+        self.log_lik = log_lik
+        self.data = data
+    
+    #Methods
+    def AIC(self):
+        return 2*(self.length) - 2*(self.log_lik)
+    def BIC(self):
+        return -2*(self.log_lik) + np.log(len(self.data))*(self.length)
+    
 #Maximum Log-Likelihood Objects
-fwLogLikEUR = log_likelihoodWPDF(EUR_Data["Value"],fwEUR)
-fgLogLikEUR = log_likelihoodGPDF(EUR_Data["Value"],fgEUR)
-flnLogLikEUR = log_likelihoodLNPDF(EUR_Data["Value"],flnEUR)
-fllLogLikEUR = log_likelihoodLLPDF(EUR_Data["Value"],fllEUR)
-#AIC/BIC Criterion Tests
-fwAIC = AIC(fwlength,fwLogLikEUR)
-fgAIC = AIC(fglength,fgLogLikEUR)
-flnAIC = AIC(flnlength,flnLogLikEUR)
-fllAIC = AIC(flllength,fllLogLikEUR)
-fwBIC = BIC(fwlength,EUR_Data["Value"],fwLogLikEUR)
-fgBIC = BIC(fglength,EUR_Data["Value"],fgLogLikEUR)
-flnBIC = BIC(flnlength,EUR_Data["Value"],flnLogLikEUR)
-fllBIC = BIC(flllength,EUR_Data["Value"],fllLogLikEUR)
+fwLogLikEUR = log_likelihoodPDF(EUR_Data["Value"],fwEUR)
+fgLogLikEUR = log_likelihoodPDF(EUR_Data["Value"],fgEUR)
+flnLogLikEUR = log_likelihoodPDF(EUR_Data["Value"],flnEUR)
+fllLogLikEUR = log_likelihoodPDF(EUR_Data["Value"],fllEUR)
+#Instance of the Log Likelihood Objects 
+MLE_Weibull_EUR = fwLogLikEUR.Weibull()
+MLE_Gamma_EUR = fwLogLikEUR.Gamma()
+MLE_LN_EUR = fwLogLikEUR.LN()
+MLE_LL_EUR = fwLogLikEUR.LL()
+#AIC/BIC Criterion Tests Objects
+fwST = StatisticalTests(len(fwEUR),MLE_Weibull_EUR,EUR_Data["Value"])
+fgST = StatisticalTests(len(fgEUR),MLE_Gamma_EUR,EUR_Data["Value"])
+flnST = StatisticalTests(len(flnEUR),MLE_LN_EUR,EUR_Data["Value"])
+fllST = StatisticalTests(len(fllEUR),MLE_LN_EUR,EUR_Data["Value"])
+#AIC Tests
+AIC_Weibull_EUR = fwST.AIC()
+AIC_Gamma_EUR = fgST.AIC()
+AIC_LN_EUR = flnST.AIC()
+AIC_LL_EUR = fllST.AIC()
+#BIC Tests
+BIC_Weibull_EUR = fwST.BIC()
+BIC_Gamma_EUR = fgST.BIC()
+BIC_LN_EUR = flnST.BIC()
+BIC_LL_EUR = fllST.BIC()
 #Goodness-of-Fit Statistics
 #KS Test
 fwKSEUR = s.kstest(fwEUR,"norm")

@@ -81,18 +81,18 @@ plt.ylabel('Cumulative Density',fontsize = 14)
 plt.legend(frameon=True,fancybox=True,
            shadow=True,framealpha=1,prop={"size":14})
 plt.show()
+#--------------------------------------------------------
 #Statistical Tests Calculations
 #Goodness-of-Fit Criterion Tests
-#Implement AIC, BIC Criterion and MLE best fit
 #OOP Approach
 class log_likelihoodPDF:
     
     #Attributes
     def __init__(self,data,fitted_params):
-        self.data = data
-        self.fitted_params = fitted_params
+        self.data = data #Data to be used
+        self.fitted_params = fitted_params #Fitted statistical distribution parameters
         
-    #Methods
+    #Methods - 4 Statistical Distributions
     def Weibull(self):
         return np.sum(s.invweibull.logpdf(self.data,self.fitted_params[0],self.fitted_params[1],self.fitted_params[2]))
     def Gamma(self):
@@ -106,11 +106,11 @@ class StatisticalTests:
     
     #Attributes
     def __init__(self,length,log_lik,data):
-        self.length = length
-        self.log_lik = log_lik
-        self.data = data
+        self.length = length #Length of the statistical distribution fitted parameters
+        self.log_lik = log_lik #MLE values from the log_likelihoodPDF class
+        self.data = data #Data to be used
     
-    #Methods
+    #Methods - AIC and BIC
     def AIC(self):
         return 2*(self.length) - 2*(self.log_lik)
     def BIC(self):

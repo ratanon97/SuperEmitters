@@ -213,3 +213,11 @@ Fug_GreenPath = Fug_GreenPath.replace(to_replace =["Gas Multiwell Group Battery"
                                                    "Gas Multiwell Proration Outside Se Alberta Battery",
                                                    "Gas Single-well Battery"], 
                                       value ="Gas Battery") 
+Fug_GreenPath["Facility_Type"] = pd.Categorical(Fug_GreenPath["Facility_Type"])
+#Construction of the Lorenz curves for visualisation in ggplot and the base plot for emission source population
+#Process/Block Population
+#Wellhead
+PBWH_Filter = Fug_GreenPath["Process_Block"] == "Wellhead"
+Fug_GreenPath_WH = Fug_GreenPath[PBWH_Filter]
+Fug_GreenPath_WH = Fug_GreenPath.sort_values(by=["Emission_Rate_cmd"]) #Order the values
+#Implement Lorenz Curve function or cumulative sum!

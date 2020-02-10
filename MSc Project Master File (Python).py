@@ -208,4 +208,10 @@ Fug_GreenPath.columns = ["Service_Area",
 Fug_GreenPath["Emission_Rate_cmm"] = Fug_GreenPath["Emission_Rate_cfm"] * 0.035315 #To convert cubic feet to cubic metre, multiply cubic feet with 0.035315
 Fug_GreenPath["Emission_Rate_cmh"] = Fug_GreenPath["Emission_Rate_cmm"] * 60 #Cubic meter per hour
 Fug_GreenPath["Emission_Rate_cmd"] = Fug_GreenPath["Emission_Rate_cmh"] * 1440 #Cubic meter per day
-#Write gsub equivalent here (Use regular expressions)
+#Replace the values in the Facility Type
+Fug_GreenPath = Fug_GreenPath.replace(to_replace ="Gas Multiwell Group Battery", 
+                 value ="Gas Battery") 
+Fug_GreenPath = Fug_GreenPath.replace(to_replace ="Gas Multiwell Proration Outside Se Alberta Battery", 
+                 value ="Gas Battery") 
+Fug_GreenPath = Fug_GreenPath.replace(to_replace ="Gas Multiwell Proration Outside Se Alberta Battery", 
+                 value ="Gas Battery") 

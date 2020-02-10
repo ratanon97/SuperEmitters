@@ -209,9 +209,7 @@ Fug_GreenPath["Emission_Rate_cmm"] = Fug_GreenPath["Emission_Rate_cfm"] * 0.0353
 Fug_GreenPath["Emission_Rate_cmh"] = Fug_GreenPath["Emission_Rate_cmm"] * 60 #Cubic meter per hour
 Fug_GreenPath["Emission_Rate_cmd"] = Fug_GreenPath["Emission_Rate_cmh"] * 1440 #Cubic meter per day
 #Replace the values in the Facility Type
-Fug_GreenPath = Fug_GreenPath.replace(to_replace ="Gas Multiwell Group Battery", 
-                 value ="Gas Battery") 
-Fug_GreenPath = Fug_GreenPath.replace(to_replace ="Gas Multiwell Proration Outside Se Alberta Battery", 
-                 value ="Gas Battery") 
-Fug_GreenPath = Fug_GreenPath.replace(to_replace ="Gas Multiwell Proration Outside Se Alberta Battery", 
-                 value ="Gas Battery") 
+Fug_GreenPath = Fug_GreenPath.replace(to_replace =["Gas Multiwell Group Battery", 
+                                                   "Gas Multiwell Proration Outside Se Alberta Battery",
+                                                   "Gas Single-well Battery"], 
+                                      value ="Gas Battery") 

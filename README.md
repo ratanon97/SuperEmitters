@@ -34,3 +34,7 @@ I would like to express my gratitude to Dr Adam Hawkes for giving me the opportu
 I would also like to thank the companies and research institutes that took their time to provide me some data input for this study. Thank you to Yori Jamin from Clearstone Engineering, Joshua Anhalt and Mike D’Antoni from GreenPath Energy for providing me their methane emissions datasets. Thank you to Hendrik Hamann and Levente Klein from IBM and James Scherer from Aeris Technologies for providing me economic information for the economic assessment of this study. Thank you to Evar Umeozor from CERI for providing me the ICERM database and guidance on the report “Economic and Environmental Impacts of Methane Emissions Reduction In The Natural Gas Supply Chain”. Without all this information, this study would not be possible.
 
 Lastly, I would like to express my sincere thanks to my girlfriend Cat, my family and all my friends, who have conversed with me about the project, for their continual and moral support.
+
+## Methodology
+A modelling workflow is shown below to outline the steps taken in the project
+![](ImagesForREADME//SuperEmitters/Modelling%20Workflow%20for%20Report.png)

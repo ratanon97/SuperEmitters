@@ -37,4 +37,4 @@ Lastly, I would like to express my sincere thanks to my girlfriend Cat, my famil
 
 ## Methodology
 A modelling workflow is shown below to outline the steps taken in the project
-![](ImagesForREADME/SuperEmitters/Modelling%20Workflow%20for%20Report.png)
+![](ImagesREADME/Modelling%20Workflow%20for%20Report.png)

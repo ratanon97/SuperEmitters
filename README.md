@@ -41,3 +41,5 @@ A modelling workflow is shown below to outline the steps taken in the project
 <p align="center">
   <img src="ImagesREADME/Modelling%20Workflow%20for%20Report.png" width = "800" height="602">
 </p>
+
+The first phase of the methodology is emissions data collection, which will be used as the input for the statistical emissions model. The ideal methane emissions data should display the source of the emissions. Examples of emission sources are equipment-specific sources such as compressors, separators, production tanks, flare knockout drums, etc. The emissions data should also be categorised to the emissions' type (eg: vented or leaked emissions) and the associated reporting segment (stages from the natural gas supply chain)

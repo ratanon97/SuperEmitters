@@ -48,4 +48,6 @@ The first phase of the methodology is emissions data collection, which will be u
   <img src="ImagesREADME/CERI%20Supply%20Chain%20BFD.png" width = "800" height="286">
 </p>
 
+The highlighted stages are the considered stages in the project. The emissions data from these stages were robust enough to conduct the simulation in this project. In the future, it would be desirable to consider other stages as well.
+
 Economic data for the economic assessment were also collected. The considered mitigation equipment are part of the Advanced Research Projects Agency-Energy ([ARPA-E](https://arpa-e.energy.gov/?q=arpa-e-site-page/about)). Specifically, the mitigation equipment are under the Methane Observation Networks with Innovative Technology to Obtain Reductions ([MONITOR](https://arpa-e.energy.gov/?q=arpa-e-programs/monitor)) program by ARPA-E. All of the equipment under the MONITOR program were developed by participated companies using innovative technologies for a costs-effection detection of methane emissions within the natural gas supply chain infrastructure. 

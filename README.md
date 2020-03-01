@@ -38,4 +38,6 @@ Lastly, I would like to express my sincere thanks to my girlfriend Cat, my famil
 ## Methodology
 A modelling workflow is shown below to outline the steps taken in the project
 
-<img src="ImagesREADME/Modelling%20Workflow%20for%20Report.png" width = "800" height="602">
+<p align="center">
+  <img src="ImagesREADME/Modelling%20Workflow%20for%20Report.png" width = "800" height="602">
+</p>

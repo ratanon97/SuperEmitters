@@ -221,3 +221,5 @@ PBWH_Filter = Fug_GreenPath["Process_Block"] == "Wellhead"
 Fug_GreenPath_WH = Fug_GreenPath[PBWH_Filter]
 Fug_GreenPath_WH = Fug_GreenPath.sort_values(by=["Emission_Rate_cmd"]) #Order the values
 #Implement Lorenz Curve function or cumulative sum!
+FGWH_Lorenz = Fug_GreenPath_WH["Emission_Rate_cmd"].cumsum() / Fug_GreenPath_WH["Emission_Rate_cmd"].sum()
+

@@ -17,6 +17,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statistics as stats
+import plotnine
 #-------------------------------------------------------------------------------
 #Characterisation of EUR Data Script
 #Source: Balcombe et al (2015)
@@ -222,4 +223,24 @@ Fug_GreenPath_WH = Fug_GreenPath[PBWH_Filter]
 Fug_GreenPath_WH = Fug_GreenPath.sort_values(by=["Emission_Rate_cmd"]) #Order the values
 #Implement Lorenz Curve function or cumulative sum!
 FGWH_Lorenz = Fug_GreenPath_WH["Emission_Rate_cmd"].cumsum() / Fug_GreenPath_WH["Emission_Rate_cmd"].sum()
+#Skewness Analysis
+In_Depth_Fug_GreenPath_WH = Fug_GreenPath.loc[:,["Facility_Type",
+                                                 "Emission_Type",
+                                                 "Process_Block",
+                                                 "Service_Type",
+                                                 "Component_Main_Type",
+                                                 "Emission_Rate_cmd"]]
+IDPBWH_Filter = In_Depth_Fug_GreenPath_WH["Process_Block"] == "Wellhead"
+In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH[IDPBWH_Filter]
+In_Depth_Fug_GreenPath_WH["Rank"] = In_Depth_Fug_GreenPath_WH["Emission_Rate_cmd"].rank() #Find the ranks for the top 5% emitters
+IDPBWHP_Top5_Filter = In_Depth_Fug_GreenPath_WH["Rank"] == max(In_Depth_Fug_GreenPath_WH["Rank"])
+In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH[IDPBWHP_Top5_Filter]
+#Process/Block Population
+#Wellhead
+PBWH_Filter = Fug_GreenPath["Process_Block"] == "Wellhead"
+Fug_GreenPath_WH = Fug_GreenPath[PBWH_Filter]
+Fug_GreenPath_WH = Fug_GreenPath.sort_values(by=["Emission_Rate_cmd"]) #Order the values
+#Implement Lorenz Curve function or cumulative sum!
+FGWH_Lorenz = Fug_GreenPath_WH["Emission_Rate_cmd"].cumsum() / Fug_GreenPath_WH["Emission_Rate_cmd"].sum()
+
 

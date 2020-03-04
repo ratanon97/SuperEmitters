@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import statistics as stats
 import plotnine
+import math
 #-------------------------------------------------------------------------------
 #Characterisation of EUR Data Script
 #Source: Balcombe et al (2015)
@@ -233,8 +234,18 @@ In_Depth_Fug_GreenPath_WH = Fug_GreenPath.loc[:,["Facility_Type",
 IDPBWH_Filter = In_Depth_Fug_GreenPath_WH["Process_Block"] == "Wellhead"
 In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH[IDPBWH_Filter]
 In_Depth_Fug_GreenPath_WH["Rank"] = In_Depth_Fug_GreenPath_WH["Emission_Rate_cmd"].rank() #Find the ranks for the top 5% emitters
-IDPBWHP_Top5_Filter = In_Depth_Fug_GreenPath_WH["Rank"] == max(In_Depth_Fug_GreenPath_WH["Rank"])
-In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH[IDPBWHP_Top5_Filter]
+In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH.sort_values(by=["Emission_Rate_cmd"])
+In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH.reset_index()
+In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH.drop("level_0",1)
+In_Depth_Fug_GreenPath_WH = In_Depth_Fug_GreenPath_WH.drop("index",1)
+
+for h in range(0,len(In_Depth_Fug_GreenPath_WH)):
+    if h == round(0.05 *len(In_Depth_Fug_GreenPath_WH)):
+        Test_Filter = In_Depth_Fug_GreenPath_WH["Rank"] == len(In_Depth_Fug_GreenPath_WH)-h
+        In_Depth_Fug_GreenPath_WH_Test = In_Depth_Fug_GreenPath_WH[Test_Filter] #Fix this
+
+In_Depth_Fug_GreenPath_WH = pd.DataFrame(In_Depth_Fug_GreenPath_WH_Test)
+
 #Process/Block Population
 #Wellhead
 PBWH_Filter = Fug_GreenPath["Process_Block"] == "Wellhead"

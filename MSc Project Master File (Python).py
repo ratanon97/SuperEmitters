@@ -17,7 +17,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statistics as stats
-import plotnine
+#import plotnine
 import math
 #-------------------------------------------------------------------------------
 #Characterisation of EUR Data Script
@@ -27,7 +27,7 @@ import math
 #Set working directory for EUR Data 
 #Import EUR Data
 print(os.getcwd())
-os.chdir("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs")
+os.chdir("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets")
 EUR_Data = pd.read_csv("US_EUR_Data.csv")
 #------------------------------------------------------------------------------
 #Data Frame Preparation
@@ -168,7 +168,7 @@ fllADEUR = s.anderson(fllEUR,"norm")
 #Report Source: GreenPath 2016 Alberta Fugitive and Vented Emissions Inventory Study
 #Import Emissions Data
 print(os.getcwd())
-os.chdir("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs")
+os.chdir("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets")
 Fug_GreenPath = pd.read_csv("Alberta GreenPath Fugitive Data.csv")
 #Extra Notes: Methane emissions were collected using bottom-up methods
 #GWP Used: GWP100 of 25 for Methane and GWP100 of 298 for NO2

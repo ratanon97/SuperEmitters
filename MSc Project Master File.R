@@ -142,7 +142,7 @@ StatsEUR <- list(GOF=GOFEUR,
 #---------------------------------------------------------
 #Set Working Directory for GreenPath Fugitive Data
 getwd() #See the working directory of the associated computer to import the data
-setwd("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs") #Set your working directory accordingly to the location of your file input
+setwd("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets") #Set your working directory accordingly to the location of your file input
 Fug_GreenPath <- read.csv("Alberta GreenPath Fugitive Data.csv") 
 #---------------------------------------------------------
 #Extra Notes: Methane emissions were collected using bottom-up methods
@@ -626,7 +626,7 @@ MC_Fug_GreenPath + geom_histogram(aes(x=X990,y=stat(density)),
 #Source script: Alberta Fugitive Equipment Leak Data
 #Report Source: Update of Equipment,Component and Fugitive Emission Factors for Alberta Upstream Oil and Gas.
 getwd() #See the working directory of the associated computer to import the data
-setwd("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs")#Set the desired working directory
+setwd("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets") #Set the desired working directory
 ClearStone <- read.csv("Alberta Fugitive Equipment Leak Data.csv") #Read the csv file input for the Clearstone script
 #---------------------------------------------------------
 #Notes: This is bottom up method
@@ -1442,7 +1442,7 @@ MC_ClearStone_Histo + geom_histogram(aes(x=X10,y=stat(density)),
 #--------------------------------------------
 #Set working directory for Production Data
 getwd()
-setwd("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs")#Assign working directory
+setwd("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets")#Assign working directory
 NGProduction <-read.csv("Alberta Production Data for Red Deer.csv",row.names=1)#The imported data had a Site ID column dedicated to each row. This column was the first column in the data and the row.names = 1 was used to turn that column into a row column in RStudio
 #Note: the production data in this script are from the Red Deer region
 #The data was collected on the year 2016
@@ -1773,7 +1773,7 @@ MC_RedDeer_Histo + geom_histogram(aes(x=X10,y=stat(density)),
 #--------------------------------------------
 #Set working directory for Production Data (Medicine Hat)
 getwd()
-setwd("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs") #Assign working directory
+setwd("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets") #Assign working directory
 NGProductionMedicine <- read.csv("Alberta Production Data for Medicine Hat.csv",row.names=1) #The imported data had a Site ID column dedicated to each row. This column was the first column in the data and the row.names = 1 was used to turn that column into a row column in RStudio
 #Note: the production data in this script are from the Medicine Hat region
 #Gas source in this region study is CONVENTIONAL GAS

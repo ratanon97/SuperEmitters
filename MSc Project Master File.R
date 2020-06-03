@@ -23,7 +23,7 @@
 #--------------------------------------------------------
 #Set working directory for EUR Data 
 getwd() #Find out the working directory from your associated computer/laptop
-setwd("C:\\Users\\KOMSUN\\Documents\\Files from Imperial Laptop\\Modules\\Research Project\\Data Collection\\CSV Inputs") #Set your working directory accordingly to the location of your file input
+setwd("/Users/ratanonsuksumrun/Documents/GitHub/SuperEmitters/Spreadsheets") #Set your working directory accordingly to the location of your file input
 EUR_Data <-read.csv("US_EUR_Data.csv") #Import the file input, File type must be .csv only 
 #--------------------------------------------------------
 #Data Frame Preparation
